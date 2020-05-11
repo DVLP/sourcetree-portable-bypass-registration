@@ -1,0 +1,4 @@
+SourceTree without installation and registration. Still using APPDATA directory so not really portable
+
+1. Download this repo as ZIP
+2. Run sourcetree_portable.ps1 in powershell (no admin needed)
