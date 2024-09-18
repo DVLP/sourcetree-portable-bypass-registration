@@ -1,4 +1,4 @@
-$version="3.3.8"
+$version="3.4.18"
 $url="https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourcetreeEnterpriseSetup_$($version).msi"
 $client = New-Object System.Net.WebClient
 
