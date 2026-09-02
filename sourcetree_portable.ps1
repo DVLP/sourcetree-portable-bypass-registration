@@ -1,4 +1,4 @@
-$version="3.4.18"
+$version="3.4.32"
 $url="https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourcetreeEnterpriseSetup_$($version).msi"
 $client = New-Object System.Net.WebClient
 
@@ -32,7 +32,7 @@ Copy-Item ".\user.config" -Destination $userConfPath
 Copy-Item ".\accounts.json" -Destination $env:APPDATA\Atlassian\SourceTree
 
 echo "Flattening folder"
-Get-ChildItem -Path .\sourcetree\ProgramFiles\Atlassian\Sourcetree -Recurse | Move-Item -Destination .\sourcetree
+Get-ChildItem -Path ".\sourcetree\ProgramFiles\Atlassian\Sourcetree Enterprise" -Recurse | Move-Item -Destination .\sourcetree
 # Start-Sleep -s 2
 
 echo "Cleaning up"
